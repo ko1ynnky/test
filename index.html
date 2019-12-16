@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>対戦決め</title>
+		<script type="text/javascript" language="javascript">
+		function onButtonClick() {
+			target = document.getElementById("output");
+			target.innerHTML = "";
+			var resArray = document.forms.id_form1.id_textBox1.value.split(/\n/);
+			for(var i = resArray.length - 1; i > 0; i--){
+			    var r = Math.floor(Math.random() * (i + 1));
+			    var tmp = resArray[i];
+			    resArray[i] = resArray[r];
+			    resArray[r] = tmp;
+			}
+			console.log(resArray);
+			for (var i = 0; i < resArray.length; i++) {
+				if ((i%2)==0) {
+					if(i==resArray.length-1) {
+						target.innerHTML += '<br>余り：' + resArray[i];
+					} else {
+						target.innerHTML += resArray[i]+'　vs　';
+					}
+				} else {
+					target.innerHTML += resArray[i]+'<br>';
+				}
+			}
+		}
+		</script>
+	</head>
+	<body>
+		名前を1行ずつ入力してください。
+		<form name="form1" id="id_form1" action="">
+			<textarea id="id_textBox1" cols="50" rows="10" value=""></textarea>
+			<br>
+			<input type="button" value="対戦を決める" onclick="onButtonClick();" />
+		</form>
+		<hr/>
+		<div id="output"></div>
+	</body>
+</html>
