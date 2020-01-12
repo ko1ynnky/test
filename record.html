@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Record</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
@@ -44,85 +44,125 @@
  -->
     <div class="card border-success">
       <div class="card-body">
-        <h5 class="card-title">対戦結果入力</h5>
+        <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <h5 class="card-title">対戦結果入力</h5>
+        </a>
         <br>
-        <form>
-          <div class="form-group row align-items-center">
-                        <span class="col-sm-2">日付</span>
-                <div class="col-sm-4">
-                        <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
-                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4"/>
-                            <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
-                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                            </div>
-                        </div>
+        <div class="collapse" id="collapseExample">
+          <form>
+            <div class="form-group row align-items-center">
+                          <span class="col-sm-2">日付</span>
+                  <div class="col-sm-4">
+                          <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                              <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4"/>
+                              <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                                  <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                              </div>
+                          </div>
+                  </div>
+                  <script type="text/javascript">
+                      jQuery.noConflict();
+                      var $j = jQuery;
+                      $j(function () {
+                          var dateNow = new Date();
+                          $j('#datetimepicker4').datetimepicker({
+                              defaultDate:dateNow,
+                              locale: 'ja',
+                              format: 'L'
+                          });
+                      });
+                  </script>
+                  <span class="col-sm-2">回戦</span>
+                  <div class="col-sm-4">
+                      <input class="form-control" type="number" step="1" min="1">
+                      <!-- <label>試合目</label> -->
+                  </div>
+
+
+            </div>
+            <div class="form-group row align-items-center">
+              <span class="col-sm-2">対戦相手</span>
+              <div class="col-sm-4">
+                <input class="form-control" type="text">
+              </div>
+              <span class="col-sm-2">級</span>
+              <div class="col-sm-4">
+                <select class="form-control">
+                  <option></option>
+                  <option>A級</option>
+                  <option>B級</option>
+                  <option>D級</option>
+                  <option>C級</option>
+                  <option>E級</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row align-items-center">
+              <span class="col-sm-2">勝敗</span>
+              <div class="col-sm-4">
+                <select class="form-control">
+                  <option></option>
+                  <option>勝ち</option>
+                  <option>負け</option>
+                  <option>タイムアップ</option>
+                </select>
+              </div>
+              <span class="col-sm-2">枚数</span>
+              <div class="col-sm-4">
+                  <input class="form-control" type="number" step="1" min="1" max="50">
+              </div>
+            </div>
+
+            <div class="form-group row align-items-center">
+              <span class="col-sm-2">コメント</span>
+              <div class="col-sm-10">
+                <textarea class="form-control" id="comment" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <div id="app">
+                  <button class="btn btn-primary" v-on:click="onclick">送信</button>
+                  <p>{{message}}</p>
                 </div>
-                <script type="text/javascript">
-                    $(function () {
-                        var dateNow = new Date();
-                        $('#datetimepicker4').datetimepicker({
-                            defaultDate:dateNow,
-                            locale: 'ja',
-                            format: 'L'
-                        });
-                    });
-                </script>
-                <span class="col-sm-2">回戦</span>
-                <div class="col-sm-4 form-inline">
-                    <input class="form-control" type="number" step="1" min="1"><label>試合目</label>
-                </div>
-
-
-          </div>
-          <div class="form-group row align-items-center">
-            <span class="col-sm-2">対戦相手</span>
-            <div class="col-sm-4">
-              <input class="form-control" type="text">
+              </div>
             </div>
-            <span class="col-sm-2">級</span>
-            <div class="col-sm-4">
-              <select class="form-control">
-                <option></option>
-                <option>A級</option>
-                <option>B級</option>
-                <option>C級</option>
-                <option>D級</option>
-                <option>E級</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group row align-items-center">
-            <span class="col-sm-2">勝敗</span>
-            <div class="col-sm-4">
-              <select class="form-control">
-                <option></option>
-                <option>勝ち</option>
-                <option>負け</option>
-                <option>タイムアップ</option>
-              </select>
-            </div>
-            <span class="col-sm-2">枚数</span>
-            <div class="col-sm-4">
-                <input class="form-control" type="number" step="1" min="1" max="50">
-            </div>
-          </div>
-
-          <div class="form-group row align-items-center">
-            <span class="col-sm-2">コメント</span>
-            <div class="col-sm-10">
-              <textarea class="form-control" id="comment" rows="3"></textarea>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-              <button class="btn btn-primary">送信</button>
-            </div>
-          </div>
-        </form>
+          </form>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="card border-success">
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>日付</th>
+              <th>回戦</th>
+              <th>対戦相手</th>
+              <th>級</th>
+              <th>勝敗</th>
+              <th>枚数</th>
+              <th>コメント</th>
+            </tr>
+          </thead>
+          <tbody>
+            <td>2020/01/12</td>
+            <td>1</td>
+            <td>H本 S水</td>
+            <td>A級</td>
+            <td>負け</td>
+            <td>1</td>
+            <td>まけた</td>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
   <script src="js/record.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
