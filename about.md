@@ -4,8 +4,6 @@
 * 競技かるた歴14年（2020年4月時点）、A級四段
 * [東京大学かるた会](https://ut-karuta.bushidoo.com/)
 * 全日本かるた協会 広報部
-  <!-- * 大会のネット中継担当
-  * [第一回小倉山杯](https://ogurayama.chihayafund.com/)で選手紹介を少し書きました -->
 
 # [歌留多録](https://www.karutalog.com)を作ろうと思ったきっかけ
 ## 自分が使いたい
