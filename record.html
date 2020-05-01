@@ -37,6 +37,25 @@
 </nav> -->
 </head>
 <body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-success mt-3 mb-3">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Karuta-Record</a>
+      <div class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+              <li class="nav-item active">
+                  <a class="nav-link" href="record.html">記録</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">統計</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">etc</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
   <div class="container mt-5">
     <!-- <h1 class="mt-5">Sticky footer with fixed navbar</h1>
     <p class="lead">Pin a footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>main &gt; .container</code>.</p>
@@ -138,33 +157,20 @@
         <div class="col-md-3 col-sm-6">2020/01/11　1回戦</div>
         <div class="col-md-3 col-sm-6">H本 S水（A級）</div>
         <div class="col-md-3 col-sm-6">1枚負け</div>
+        <div class="col-md-3 col-sm-6">悔しいです……<br>悔しいです……<div class="float-right"><a href="#" class="btn btn-primary btn-sm">編集</a></div></div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">2020/01/11　1回戦</div>
+        <div class="col-md-3 col-sm-6">H本 S水（A級）</div>
+        <div class="col-md-3 col-sm-6">1枚負け</div>
         <div class="col-md-3 col-sm-6">悔しいです……</div>
       </div>
-      <div class="row">
-      </div>
-      <!-- <div class="row">
-        <div class="col-md-3 col-sm-6"><strong>勝敗</strong></div>
-        <div class="col-md-3 col-sm-6">負け</div>
-        <div class="col-md-3 col-sm-6"><strong>枚数</strong></div>
-        <div class="col-md-3 col-sm-6">1</div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 col-sm-6"><strong>コメント</strong></div>
-        <div class="col-md-3 col-sm-6">飛び出しが早いので参った。</div>
-      </div> -->
     </div>
   </div>
 
-    <br>
-    <div class="card border-success">
-      <div class="card-body">
-        <div class="row">
-          <table class="table">
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
   <script src="js/record.js" charset="utf-8"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
