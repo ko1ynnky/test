@@ -1,11 +1,11 @@
-<!-- <!DOCTYPE html>
-<!-- saved from url=(0036)https://materializecss.com/tabs.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="msapplication-tap-highlight" content="no">
-  <meta name="description" content="Materialize is a modern responsive CSS framework based on Material Design by Google. ">
+  <meta name="description" content="大学かるた会 地域別twitterリスト">
   <title>大学かるた会 地域別twitterリスト</title>
   <meta name="msapplication-TileColor" content="#FFFFFF">
   <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
@@ -16,16 +16,6 @@
   <link href="./files/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
   <link href="./files/css" rel="stylesheet" type="text/css">
   <link href="./files/icon" rel="stylesheet">
-  <!-- if !isDemo-->
-  <!--   script.-->
-  <!--     window.liveSettings = {-->
-  <!--       api_key: "a0b49b34b93844c38eaee15690d86413",-->
-  <!--       picker: "bottom-right",-->
-  <!--       detectlang: true,-->
-  <!--       dynamic: true,-->
-  <!--       autocollect: true-->
-  <!--     };-->
-  <!--   script(src='//cdn.transifex.com/live.js')-->
   <script id="_carbonads_projs" type="text/javascript" src="./files/CKYIK27J.json"></script><script charset="utf-8" src="./files/button.75a79c54dcfc115f36a5bc654a4d6c25.js.ダウンロード"></script><style type="text/css">/* Copyright 2014-present Evernote Corporation. All rights reserved. */
   @keyframes caretBlink {
     from { opacity: 1.0; }
@@ -201,87 +191,102 @@
   width: 110px;
   height: 36px;
 }
+
+.sticky-nav{
+  position: fixed;
+  top:0;
+}
+
+.tabs .tab a {
+  color:#26A69A
+}
+
 </style>
 </head>
 <body>
-  <header style="position:sticky;padding-left:0px;padding-right:0px">
-    <ul class="tabs tab-demo z-depth-1">
-      <li class="tab" style="line-height:21px"><a href="https://materializecss.com/tabs.html#test16">北海道<br>東北</a></li>
-      <li class="tab"><a href="https://materializecss.com/tabs.html#test17">関東</a></li>
-      <li class="tab"><a href="https://materializecss.com/tabs.html#test18">中部</a></li>
-      <li class="tab"><a href="https://materializecss.com/tabs.html#test19">近畿</a></li>
-      <li class="tab"><a href="https://materializecss.com/tabs.html#test20">中国</a></li>
-      <li class="tab"><a href="https://materializecss.com/tabs.html#test21">四国</a></li>
-      <li class="tab" style="line-height:21px"><a href="https://materializecss.com/tabs.html#test22">九州<br>沖縄</a></li>
-      <li class="indicator" style="left: 0px; right: 636px;"></li>
+  <header style="position:sticky;padding-left:0px;padding-right:0px;padding-bottom: 50px;text-align:center;z-index:100">
+    <ul class="tabs tab-demo z-depth-1 sticky-nav" style="padding:1px">
+      <li class="tab" style="line-height:21px"><a href="#test16">北海道<br>東北</a></li>
+      <li class="tab"><a href="#test17">関東</a></li>
+      <li class="tab"><a href="#test18">中部</a></li>
+      <li class="tab"><a href="#test19">近畿</a></li>
+      <li class="tab"><a href="#test20">中国</a></li>
+      <li class="tab"><a href="#test21">四国</a></li>
+      <li class="tab" style="line-height:21px"><a href="#test22">九州<br>沖縄</a></li>
+      <li class="indicator" style="left: 0px; right: 0px;"></li>
     </ul>
-</header>
+  </header>
   <main style="padding-left:0px;padding-right:0px">
     <div class="container">
       <div class="row">
-        <div class="col s12 m8 offset-m1 xl7 offset-xl1">
+        <div class="col s12 m6 offset-m3 text-center">
           <div id="introduction" class="section scrollspy">
+            <div id="test16" class="col s12 active" style="display: block;">
+              <div style="text-align: center; padding-bottom: 10px"><a class="waves-effect waves-light btn-small" target="_blank" href="https://twitter.com/i/lists/1244130020710203392">twitterでリストを見る</a></div>
+              <a class="twitter-timeline" href="https://twitter.com/karutaclubintro/lists/list7?ref_src=twsrc%5Etfw">A Twitter List by karutaclubintro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div id="test17" class="col s12 active" style="display: none;">
+              <div style="text-align: center; padding-bottom: 10px"><a class="waves-effect waves-light btn-small" target="_blank" href="https://twitter.com/i/lists/1244130045741780992">twitterでリストを見る</a></div>
+              <a class="twitter-timeline" href="https://twitter.com/karutaclubintro/lists/list-17909?ref_src=twsrc%5Etfw">A Twitter List by karutaclubintro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div id="test18" class="col s12" style="display: none;">
+              <div style="text-align: center; padding-bottom: 10px"><a class="waves-effect waves-light btn-small" target="_blank" href="https://twitter.com/i/lists/1244130169750618112">twitterでリストを見る</a></div>
+              <a class="twitter-timeline" href="https://twitter.com/karutaclubintro/lists/list1?ref_src=twsrc%5Etfw">A Twitter List by karutaclubintro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div id="test19" class="col s12" style="display: none;">
+              <div style="text-align: center; padding-bottom: 10px"><a class="waves-effect waves-light btn-small" target="_blank" href="https://twitter.com/i/lists/1244130221009195009">twitterでリストを見る</a></div>
+              <a class="twitter-timeline" href="https://twitter.com/karutaclubintro/lists/list2?ref_src=twsrc%5Etfw">A Twitter List by karutaclubintro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div id="test20" class="col s12" style="display: none;">
+              <div style="text-align: center; padding-bottom: 10px"><a class="waves-effect waves-light btn-small" target="_blank" href="https://twitter.com/i/lists/1244130258112012288">twitterでリストを見る</a></div>
+              <a class="twitter-timeline" href="https://twitter.com/karutaclubintro/lists/list3?ref_src=twsrc%5Etfw">A Twitter List by karutaclubintro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div id="test21" class="col s12" style="display: none;">
+              <div style="text-align: center; padding-bottom: 10px"><a class="waves-effect waves-light btn-small" target="_blank" href="https://twitter.com/i/lists/1244130280916398080">twitterでリストを見る</a></div>
+              <a class="twitter-timeline" href="https://twitter.com/karutaclubintro/lists/list6?ref_src=twsrc%5Etfw">A Twitter List by karutaclubintro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div id="test22" class="col s12" style="display: none;">
+              <div style="text-align: center; padding-bottom: 10px"><a class="waves-effect waves-light btn-small" target="_blank" href="https://twitter.com/i/lists/1244130317281062912">twitterでリストを見る</a></div>
+              <a class="twitter-timeline" href="https://twitter.com/karutaclubintro/lists/list4?ref_src=twsrc%5Etfw">A Twitter List by karutaclubintro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>            </div>
+            </div>
 
 
-              <div id="test16" class="col s12 active" style="display: block;">
-                <a class="twitter-timeline" href="https://twitter.com/karutaclubintro/lists/list7?ref_src=twsrc%5Etfw">A Twitter List by karutaclubintro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
-              <div id="test17" class="col s12 active" style="display: none;">
-                <a class="twitter-timeline" href="https://twitter.com/karutaclubintro/lists/list-17909?ref_src=twsrc%5Etfw">A Twitter List by karutaclubintro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
-              <div id="test18" class="col s12" style="display: none;">
-                <a class="twitter-timeline" href="https://twitter.com/karutaclubintro/lists/list1?ref_src=twsrc%5Etfw">A Twitter List by karutaclubintro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
-              <div id="test19" class="col s12" style="display: none;">
-                <a class="twitter-timeline" href="https://twitter.com/karutaclubintro/lists/list2?ref_src=twsrc%5Etfw">A Twitter List by karutaclubintro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
-              <div id="test20" class="col s12" style="display: none;">
-                <a class="twitter-timeline" href="https://twitter.com/karutaclubintro/lists/list3?ref_src=twsrc%5Etfw">A Twitter List by karutaclubintro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
-              <div id="test21" class="col s12" style="display: none;">
-                <a class="twitter-timeline" href="https://twitter.com/karutaclubintro/lists/list6?ref_src=twsrc%5Etfw">A Twitter List by karutaclubintro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
-              <div id="test22" class="col s12" style="display: none;">
-                <a class="twitter-timeline" href="https://twitter.com/karutaclubintro/lists/list4?ref_src=twsrc%5Etfw">A Twitter List by karutaclubintro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>            </div>
-              </div>
+
+            <!--  Scripts-->
+            <script src="./files/jquery-3.2.1.min.js.ダウンロード"></script>
+            <script>if (!window.jQuery) { document.write('<script src="bin/jquery-3.2.1.min.js"><\/script>'); }
+            </script>
+            <script src="./files/jquery.timeago.min.js.ダウンロード"></script>
+            <script src="./files/prism.js.ダウンロード"></script>
+            <script src="./files/lunr.min.js.ダウンロード"></script>
+            <script src="./files/search.js.ダウンロード"></script>
+            <script src="./files/materialize.js.ダウンロード"></script>
+            <script src="./files/init.js.ダウンロード"></script>
+            <!-- Twitter Button -->
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+            <!--  Google Analytics  -->
+            <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-56218128-1', 'auto');
+            ga('require', 'displayfeatures');
+            ga('send', 'pageview');
+            </script>
 
 
-
-              <!--  Scripts-->
-              <script src="./files/jquery-3.2.1.min.js.ダウンロード"></script>
-              <script>if (!window.jQuery) { document.write('<script src="bin/jquery-3.2.1.min.js"><\/script>'); }
-              </script>
-              <script src="./files/jquery.timeago.min.js.ダウンロード"></script>
-              <script src="./files/prism.js.ダウンロード"></script>
-              <script src="./files/lunr.min.js.ダウンロード"></script>
-              <script src="./files/search.js.ダウンロード"></script>
-              <script src="./files/materialize.js.ダウンロード"></script>
-              <script src="./files/init.js.ダウンロード"></script>
-              <!-- Twitter Button -->
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-              <!--  Google Analytics  -->
-              <script>
-              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-              ga('create', 'UA-56218128-1', 'auto');
-              ga('require', 'displayfeatures');
-              ga('send', 'pageview');
-              </script>
-
-
-              <div class="sidenav-overlay" style="display: none;">
-              </div>
-              <div class="drag-target">
-              </div>
+            <div class="sidenav-overlay" style="display: none;">
+            </div>
+            <div class="drag-target">
             </div>
           </div>
         </div>
       </div>
     </div>
-  </main>
+  </div>
+</main>
 </body>
 </html>
